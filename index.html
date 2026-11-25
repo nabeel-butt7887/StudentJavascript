@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STUDENT RECORDS</title>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div>
+                <p class="eyebrow">STUDENT MANAGEMENT</p>
+                <h1>Student Records</h1>
+                <p class="sub">Simple,Obect,arrays,functions aur loops ki practice</p>
+            </div>
+            <div class="box">
+                <span class="count" id="totalCount">0</span><span class="labal">students</span>
+            </div>
+
+        </header>
+        <section class="form-card">
+            <h2>Add New Student</h2>
+            <div class="fields">
+
+                <div><label for="studentName">Name</label><input id="studentName" placeholder="student name"></div>
+                <div><label for="studentClass">Class</label><input id="studentClass" placeholder="e.g 10th"></div>
+                <div><label for="studentMarks">Marks</label><input id="studentMarks" placeholder="Out of 100"></div>
+                <button onclick="addStudent()">Add student</button>
+                <p id="message"></p>
+            </div>
+        </section>
+        <section class="table-card">
+            <h2>All Students</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Marks</th>
+                            <th>Result</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="StudentTable"></tbody>
+
+                </table>
+            </div>
+            <p id="emptyMessage">Abhi Koi Student Add Nahi Hua</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
